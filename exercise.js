@@ -12,12 +12,12 @@ function addFavoriteBook(bookname){
         favoriteBooks.push(bookname);
     }
 }
-
+//changed ' to `
 function printFavoriteBooks(){
-    console.log('There are ${favoriteBooks.length} in your list');
+    console.log(`There are ${favoriteBooks.length} in your list`);
     for (let favoriteBook of favoriteBooks){
         console.log(favoriteBook);
     }
 }
-
-printFavoriteBooks;
+//added () at the end of the function in order to be executed
+printFavoriteBooks();
